@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Acc Game Uy Tín</title>
+    <style>
+        /* CSS Cơ bản */
+        :root {
+            --primary-color: #ff4757;
+            --bg-color: #2f3542;
+            --card-bg: #57606f;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Header */
+        header {
+            background-color: #1e272e;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Banner */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #e04050;
+        }
+
+        /* Danh sách sản phẩm */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #353b48;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 150px;
+            background-color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .game-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .acc-details {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: var(--primary-color);
+            font-weight: bold;
+            float: right;
+        }
+
+        .buy-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #2ed573;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .buy-btn:hover {
+            background-color: #26af61;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e272e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <header>
+        <div class="logo">GameShop</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Đăng nhập</a>
+            <a href="#">Giỏ hàng (0)</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="hero">
+        <h1>Mua Bán Acc Game Uy Tín</h1>
+        <p>Liên quân, LMHT, Valorant, FIFA Online...</p>
+        <a href="#products" class="btn">Xem ngay</a>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="container" id="products">
+        <div style="text-align: center;">
+            <h2 class="section-title">Tài khoản nổi bật</h2>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Sản phẩm 1 -->
+            <div class="product-card">
+                <div class="product-img">🎮</div>
+                <div class="product-info">
+                    <div class="game-title">Liên Quân Mobile</div>
+                    <div class="acc-details">Rank: Kim Cương</div>
+                    <div class="acc-details">Tướng: 50+ | Skin: 20+</div>
+                    <span class="price">200.000đ</span>
+                    <button class="buy-btn">Mua ngay</button>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-card">
+                <div class="product-img">⚔️</div>
+                <div class="product-info">
+                    <div class="game-title">League of Legends</div>
+                    <div class="acc-details">Rank: Vàng 1</div>
+                    <div class="acc-details">Champions: 150+ | Skin: 10 Ultimate</div>
+                    <span class="price">500.000đ</span>
+                    <button class="buy-btn">Mua ngay</button>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-card">
+                <div class="product-img">🔫</div>
+                <div class="product-info">
+                    <div class="game-title">Valorant</div>
+                    <div class="acc-details">Rank: Ascendant 2</div>
+                    <div class="acc-details">Skin súng: Bundle Reaver</div>
+                    <span class="price">350.000đ</span>
+                    <button class="buy-btn">Mua ngay</button>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-card">
+                <div class="product-img">⚽</div>
+                <div class="product-info">
+                    <div class="game-title">FIFA Online 4</div>
+                    <div class="acc-details">OVR: 88</div>
+                    <div class="acc-details">Gold Pack: 500+</div>
+                    <span class="price">1.200.000đ</span>
+                    <button class="buy-btn">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Shop Acc Game. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
